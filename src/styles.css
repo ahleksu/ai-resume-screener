@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@plugin "tailwindcss-primeui";
+@import "primeicons/primeicons.css";
+
+/* Update the existing photo modal styles with these enhanced versions: */
+
+.photo-modal .p-dialog {
+  max-width: 95vw !important;
+  max-height: 95vh !important;
+  min-width: 600px !important;
+}
+
+.photo-modal .p-dialog-content {
+  padding: 1rem !important;
+  max-height: 85vh !important;
+  overflow: auto !important;
+}
+
+.photo-modal .p-dialog-header {
+  background: #f8fafc !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  padding: 1rem 1.5rem !important;
+}
+
+.photo-modal .p-dialog-footer {
+  background: #f8fafc !important;
+  border-top: 1px solid #e2e8f0 !important;
+  padding: 1rem 1.5rem !important;
+}
+
+/* Image zoom styles */
+.photo-modal img {
+  transition: all 0.3s ease !important;
+}
+
+.photo-modal img.cursor-zoom-in {
+  cursor: zoom-in !important;
+}
+
+.photo-modal img.cursor-zoom-out {
+  cursor: zoom-out !important;
+}
+
+/* Scrollbar styling for the modal */
+.photo-modal .p-dialog-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.photo-modal .p-dialog-content::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+.photo-modal .p-dialog-content::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.photo-modal .p-dialog-content::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
